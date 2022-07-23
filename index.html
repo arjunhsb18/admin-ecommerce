@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin E-Commerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="main-admin">
+        
+        <div class="side-bar">
+            
+            <div class="admin-profile">
+                <img src="assets/images/avatar.jpg" class="admin-image ">
+                <h3>Arjun Hasibuan</h3>
+                <p>Administrator</p>
+            </div>
+            <div class="admin-menu">
+                <ul class="menu">
+                    <li class="menu-item"><a >Produk <i class="fa-menu fa fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#tambah-produk">Tambah Produk</a></li>
+                            <li class="submenu-item"><a href="#semua-produk">Semua Produk</a></li>
+                            <li class="submenu-item"><a href="#kategori-produk">Kategori Produk</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item"><a href="#penjualan-produk">Penjualan</a></li>
+                    <li class="menu-item"><a href="#komentar-produk">Komentar</a></li>
+                    <li class="menu-item"><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content" >
+            <div class="container">
+                <div class="contents">
+                    <h2 class="content-title" id="tambah-produk">Tambah Produk</h2>
+                    <form action="" class="form-tambah">
+                        <label for="product-name">Nama Produk<span>*</span> : </label>
+                        <input type="text" name="product-name">
+                        <label for="kategori">Kategori<span>*</span> : </label>
+                        <select name="kategori" id="">
+                            <option value="" selected>Pilih Kategori</option>
+                            <option value="Kontrakan" >Kontrakan</option>
+                            <option value="Kosan" >Kosan</option>
+                        </select>
+                        <label for="harga">Harga Produk<span>*</span> : </label>
+                        <input type="text" name="harga">
+                        <label for="deskripsi">Deskripsi<span>*</span>: </label>
+                        <textarea name="deskripsi" id="" cols="30" rows="10" ></textarea>
+                        <label for="img-thumbnail">Gambar<span>*</span> (Boleh lebih dari 1): </label>
+                        <input type="file" id="files" name="img-thumbnail" multiple>
+                        <button class="btn btn-block btn-primary">Publish</button>
+                    </form>
+
+                    <h2 class="content-title" id="semua-produk">Semua Produk</h2>
+                    <table class="tabel-produk">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Produk</th>
+                                <th>Kategori Produk</th>
+                                <th>Deskripsi Produk</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Casa de Aminda</td>
+                                <td>Kontrakan</td>
+                                <td>aaaaa</td>
+                                <td>Delete</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="contents">
+                    
+                    <h2 class="content-title" id="kategori-produk">Kategori Produk</h2>
+                    <form action="" method="post" class="tambah-kategori">
+                        <label for="category">Kategori Produk</label>
+                        <input type="text">
+                        <button class="btn btn-block btn-primary">Tambah</button>
+                    </form>
+                    <table class="kategori-produk">
+                        <thead>
+                            <tr>
+                                <td>No.</td>
+                                <td>Kategori</td>
+                                <td>Aksi</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apartemen</td>
+                                <td>Delete</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="contents">
+                    
+                    <h2 class="content-title" id="penjualan-produk">Penjualan Produk</h2>
+                    <div style="overflow-x:auto">
+                        <table class="tabel-penjualan">
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>No. Pesanan</td>
+                                    <td>Tanggal Pesanan</td>
+                                    <td>Kode Produk</td>
+                                    <td>Nama Produk</td>
+                                    <td>Jumlah Produk</td>
+                                    <td>Total Pembayaran</td>
+                                    <td>Status</td>
+                                    <td>Aksi</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>KA040720202108</td>
+                                    <td>04-07-2020 21:08</td>
+                                    <td>KA-123</td>
+                                    <td>Casa de Aminda</td>
+                                    <td>1</td>
+                                    <td>Rp 12.000.000</td>
+                                    <td>Pending</td>
+                                    <td>Delete</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="contents">
+                    
+                    <h2 class="content-title" id="komentar-produk">Komentar Produk</h2>
+                    <div style="overflow-x:auto">
+                        <table class="tabel-komentar">
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Kode Produk</td>
+                                    <td>Tanggal Komentar</td>
+                                    <td>Kode Produk</td>
+                                    <td>Username</td>
+                                    <td>Pesan Komentar</td>
+                                    <td>Aksi</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>KA040720202108</td>
+                                    <td>04-07-2020 21:08</td>
+                                    <td>KA-123</td>
+                                    <td>Arjun123</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est sit perferendis minima illo, cum fuga tenetur ad possimus officia nihil dolorum ullam, consectetur magni repellat optio quas quae! Consequatur.</td>
+                                    <td>Delete</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

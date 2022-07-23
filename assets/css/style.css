@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box !important;
+}
+li, h1, h2, h3, h4, h5, h6, form, html, p, input, div, body, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+    font-family:Roboto, "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif
+}
+header{
+    height:65px;
+    width:100%;
+    background-color:#40739e;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+table{
+    overflow: auto;
+}
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 0px;
+    
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    
+	border-radius: 0px;
+	background-color:#192a56; 
+}
+.btn{
+    padding: 20px 50px;
+    border: none;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn-corner{
+    border-radius: 40px;
+}
+.btn-primary{
+    background-color: #192a56;
+    color: #fff;
+}
+.btn-block{
+    display: block;
+    margin-top: 10px;
+}
+
+.dashboard-top{
+    position: relative;
+}
+.dashboard-title{
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 200px;
+}
+.container{
+    max-width: 1070px;
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.side-bar{
+    position:fixed;
+    height: 100%;
+    left:0;
+    overflow:auto;
+    background-color: #fff;
+    width: 20%;
+    padding: 10px 0px;
+    box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.main-admin .admin-profile{
+    text-align: center;
+    display: block;
+}
+.main-admin .admin-image{
+    width: 150px;
+    border-radius: 50%;
+}
+.main-admin .admin-menu{
+    margin-top:50px;
+
+}
+.main-admin .fa-menu{
+    float: right;
+}
+.main-admin a{
+    padding: 10px 10px 5px 20px;
+    display: block;
+    color: black;
+}
+.main-admin .admin-menu li a:hover{
+    background-color: #C5C5C5;
+}
+.main-admin .admin-menu .menu-item{
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.main-admin .submenu{
+    display: none;
+    
+}
+.main-admin .admin-menu .submenu-item{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-content{
+    width: 80%;
+    float:right !important;
+}
+.contents{
+    background-color: #fff;
+    padding: 10px 0px;
+    box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.main-content .content-title{
+    padding: 10px 20px;
+    border-bottom: 2px solid #C5C5C5;
+}
+.main-content .form-tambah{
+    padding: 10px 20px;
+    margin-top: 20px;
+
+}
+.main-content label{
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+}
+.main-content input,.main-content textarea,.main-content select{
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    border: 2px solid black;
+}
+.main-content input:focus,.main-content textarea:focus,.main-content select:focus{
+    border: 2px solid #40739e;
+}
+.main-content input{
+    font-size: 18px;
+}
+.main-content select{ 
+    font-size: 18px;
+}
+.main-content textarea{ 
+    font-size: 18px;
+}
+.main-content label span{ 
+    color: red;
+}
+.main-content .tabel-produk{
+    padding: 10px 20px; 
+    margin:50px 0px;
+    text-align: center;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.main-content td, .main-content th { 
+	padding: 10px; 
+	border: 1px solid #192a56; 
+	font-size: 18px;
+}
+.main-content tbody {
+    overflow: auto;
+    height: 100px;
+}
+.main-content tr:nth-child(even) {
+    background: #efefef;
+}
+.main-content tr:hover {
+    background: #C5C5C5;
+}
+
+
+.main-content .tambah-kategori{
+    padding: 10px 20px;
+}
+.main-content .kategori-produk{
+    padding: 10px 20px; 
+    margin:50px 0px;
+    text-align: center;
+    border-spacing: 0;
+    width: 100%;
+}
+.main-content .tabel-penjualan{
+    padding: 10px 20px; 
+    margin:50px 0px;
+    border-spacing: 0px;
+    text-align: center;
+    width: 100%;
+}
+.main-content .tabel-komentar{
+    padding: 10px 20px; 
+    margin:50px 0px;
+    border-spacing: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+.main-login .login-card{
+    -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  padding: 30px;
+}
+.main-login .logo-login{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -20px;
+}
+.main-login .form-content{
+    margin-top: -40px;
+}
+.main-login label{
+    display: block;
+    margin-top: 5px;
+}
+.main-login input{
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+.main-login .form-ask{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.main-login button{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    outline: none;
+}
